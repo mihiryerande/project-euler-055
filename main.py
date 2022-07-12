@@ -25,7 +25,7 @@
 #
 #     NOTE: Wording was modified slightly on 24 April 2007 to emphasise the theoretical nature of Lychrel numbers.
 
-def is_palindromic(x):
+def is_palindromic(x: int) -> bool:
     """
     Returns True iff `x` is a palindromic number.
 
@@ -42,7 +42,7 @@ def is_palindromic(x):
     return x == int(str(x)[::-1])
 
 
-def main():
+def main() -> int:
     """
     Returns the count of Lychrel numbers below 10,000.
 
